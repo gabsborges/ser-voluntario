@@ -1,0 +1,81 @@
+.initializePage {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../../public/background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.initializePage-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.initializePage-box img {
+    max-width: 50%;
+    height: auto;
+    animation: fadeInPulse ease-in-out 1.8s;
+}
+
+.initializePage-box h1 {
+    color: #fff;
+    font-size: 2vw;
+    animation: FadeIn ease-in-out 3.5s;
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInPulse {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    75% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    85% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .initializePage {
+        background-image: url('../../../public/background-mobile.png');
+    }
+    .initializePage-box img {
+        max-width: 70%;
+    }
+    
+    .initializePage-box h1 {
+        color: #fff;
+        font-size: 3vw;
+        animation: FadeIn ease-in-out 3.5s;
+    }
+}
