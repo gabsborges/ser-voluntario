@@ -3,9 +3,13 @@ import Home from "./pages/Home";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/voluntarios',
     element: <Home/>
-  }
+  },
+  {
+    path: '/entidades',
+    element: <Home/>
+  },
 ])
 
 export { router }
